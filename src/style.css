@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: aqua;
+}
+
+.container {
+  background-color: blueviolet;
+}
+
+.innerContainer {
+  background-color: brown;
+}
