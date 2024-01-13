@@ -6,14 +6,21 @@ function Navbar() {
   ];
 
   const navbar = document.createElement("div");
+  const logo = document.createElement("h1");
+  logo.textContent = "Restaraunt";
+
+  const navList = document.createElement("div");
+  navList.classList.add("links")
 
   navLinks.forEach((navLink) => {
     const link = document.createElement("button");
     link.textContent = navLink.name;
     link.addEventListener("click", navLink.to);
-    navbar.appendChild(link);
+    navList.appendChild(link);
   });
 
+  navbar.appendChild(logo);
+  navbar.appendChild(navList);
   navbar.classList.add("navbar");
 
   return navbar;
