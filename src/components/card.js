@@ -1,4 +1,4 @@
-function Card(heading) {
+function Card(heading = "") {
   const card = document.createElement("div");
   card.classList.add("card");
 
@@ -6,6 +6,7 @@ function Card(heading) {
   headingElement.textContent = heading;
 
   card.appendChild(headingElement);
+  card.id = heading;
 
   return card;
 }

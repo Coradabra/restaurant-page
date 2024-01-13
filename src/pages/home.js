@@ -1,31 +1,29 @@
 import Card from "../components/card";
 
 function HomePage() {
-  const { createElement, createDocumentFragment } = document;
+  const pageContents = document.createElement("div");
+  pageContents.classList.add("pageContents");
 
-  const fragment = createDocumentFragment();
-
-  const heading = createElement("h3");
+  const heading = document.createElement("h3");
   heading.textContent = "Welcome!";
+  pageContents.appendChild(heading);
 
   const about = Card("About");
-  const aboutText = createElement("p");
+  const aboutText = document.createElement("p");
   aboutText.textContent = "Welcome to this restaurant. I love pizza!";
   about.appendChild(aboutText);
+  pageContents.appendChild(about);
 
   const hours = Card("Hours");
+  pageContents.appendChild(hours);
 
   const location = Card("Location");
-  const locationText = createElement("p");
+  const locationText = document.createElement("p");
   locationText.textContent = "123 Feedme Street, Famished, VIC 3199";
   location.appendChild(locationText);
+  pageContents.appendChild(location);
 
-  fragment.appendChild(heading);
-  fragment.appendChild(about);
-  fragment.appendChild(hours);
-  fragment.appendChild(location);
-
-  return fragment;
+  return pageContents;
 }
 
 export default HomePage;
