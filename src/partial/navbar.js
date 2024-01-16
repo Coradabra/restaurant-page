@@ -1,16 +1,21 @@
+import Router from "../utils/router";
+
 function Navbar() {
   const navLinks = [
-    { name: "Home", to: () => {} },
-    { name: "Menu", to: () => {} },
-    { name: "Contact", to: () => {} },
+    { name: "Home", to: () => Router("HOME") },
+    { name: "Menu", to: () => Router("MENU") },
+    { name: "Contact", to: () => Router("CONTACT") },
   ];
 
+  const LOGO = "Restaraunt";
+
   const navbar = document.createElement("div");
+  const container = document.createElement("div");
   const logo = document.createElement("h1");
-  logo.textContent = "Restaraunt";
+  logo.textContent = LOGO;
 
   const navList = document.createElement("div");
-  navList.classList.add("links")
+  navList.classList.add("links");
 
   navLinks.forEach((navLink) => {
     const link = document.createElement("button");
@@ -19,8 +24,9 @@ function Navbar() {
     navList.appendChild(link);
   });
 
-  navbar.appendChild(logo);
-  navbar.appendChild(navList);
+  container.appendChild(logo);
+  container.appendChild(navList);
+  navbar.appendChild(container);
   navbar.classList.add("navbar");
 
   return navbar;

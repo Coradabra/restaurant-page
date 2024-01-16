@@ -17,12 +17,23 @@ li {
 }
 
 .navbar {
+  background: linear-gradient(
+    0deg,
+    rgb(50, 50, 50) 0%,
+    rgb(34, 34, 34) 50%,
+    rgb(50, 50, 50) 100%
+  );
+  color: #eeeeee;
+  padding-top: 1rem;
+}
+
+.navbar > div {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #222222;
-  color: #eeeeee;
-  padding: 1rem 10vw 0 10vw;
 }
 
 .links {
@@ -40,10 +51,23 @@ li {
   color: #eeeeee;
 }
 
-.container {
-  background-color: blueviolet;
+.links button:hover {
+  background-color: #474747;
 }
 
-.innerContainer {
-  background-color: brown;
+.page,
+.container {
+  box-sizing: border-box;
+  max-width: 1024px;
+  width: 100%;
+  margin: 2rem auto;
+  padding: 1rem 1rem;
+  border-radius: 1rem;
+  background-color: rgb(110, 110, 110);
+}
+
+.card {
+  background-color: rgb(10, 136, 136);
+  margin: 2rem 0;
+  padding: 1rem;
 }
