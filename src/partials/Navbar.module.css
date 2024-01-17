@@ -1,0 +1,36 @@
+.navbar {
+  background-image: url("../assets/andrey-haimin-q2Fyzn-KJOQ-unsplash.jpg");
+  color: #e2e1e1;
+  padding-top: 1rem;
+}
+
+.navbar > div {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.links button {
+  font-size: 20px;
+  padding: 1rem 2rem;
+  margin: 0rem 1rem;
+  border-radius: 1rem 1rem 0rem 0rem;
+  border: none;
+  background-color: #e2e1e1;
+  color: #222222;
+  box-shadow: 3px 3px 6px 3px rgba(0, 0, 0, 0.2);
+}
+
+.links button:hover,
+.links .active {
+  background-color: #76cf10;
+  box-shadow: 3px 3px 6px 3px rgba(0, 0, 0, 0.4);
+}
