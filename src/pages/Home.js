@@ -20,7 +20,7 @@ function HomePage() {
   const about = Card("About");
   const aboutText = configElement(
     "p",
-    "Welcome to this restaurant. I love pizza!"
+    "It all started with a simple niggling feeling. That slight growling feeling you get after a little too longer between meals. We tried to ignore it but it get and left untreated, it became a ravenous hunger and MyEats was born to satisfy that hunger. "
   );
   about.appendChild(aboutText);
 

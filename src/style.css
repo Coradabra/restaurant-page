@@ -6,6 +6,7 @@ body {
   background-image: url("./assets/joshua-bartell-6vvIBTvL90A-unsplash.jpg");
   background-size: cover;
   color: #eeeeee;
+  position: relative;
 }
 
 h1,

@@ -1,3 +1,5 @@
+
+
 function configElement(elementType, textContent, className = null) {
   const element = document.createElement(elementType);
   element.textContent = textContent;
